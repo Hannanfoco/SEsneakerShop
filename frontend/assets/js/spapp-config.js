@@ -30,9 +30,12 @@ $(function () {
     });
   
     app.route({
-      view: "favorites",
-      load: "favorites.html"
-    });
+    view: "favorites",
+    load: "favorites.html",
+    onReady: function() {
+        setTimeout(loadFavorites, 300);
+    }
+});
   
     app.route({
       view: "profile",
@@ -44,9 +47,13 @@ $(function () {
     });
   
     app.route({
-      view: "login",
-      load: "login.html"
-    });
+  view: "login",
+  load: "login.html",
+  onReady: function() {
+    console.log("Login page ready");
+    UserService.init();
+  }
+});
   
     app.route({
       view: "signup",

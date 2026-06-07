@@ -1,5 +1,5 @@
 let Constants = {
-  PROJECT_BASE_URL: "https://sneaker-shop-fphwo.ondigitalocean.app/",
+  PROJECT_BASE_URL: "http://localhost/SneakerShop/backend/",
   USER_ROLE: "customer",
     ADMIN_ROLE: "admin",
   };

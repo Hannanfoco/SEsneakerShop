@@ -174,6 +174,7 @@ function applyFilter(filter) {
                 Array.isArray(response) ? response :
                 Array.isArray(response.data) ? response.data :
                 Array.isArray(response.products) ? response.products :
+                (response && typeof response === 'object') ? Object.values(response) :
                 [];
 
             loadProducts("shop-product-container", products);
