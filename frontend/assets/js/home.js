@@ -15,7 +15,9 @@ function loadHomeProducts() {
       },
       success: function (response) {
         console.log("🌟 Featured products fetched:", response);
-        renderFeaturedProducts(response.data || response, "home-product-container");
+        const products = Array.isArray(response) ? response : 
+                 Array.isArray(response.data) ? response.data : [];
+renderFeaturedProducts(products, "home-product-container");
     },
       error: function (xhr) {
         console.error(" Failed to fetch featured products:", xhr.responseText);

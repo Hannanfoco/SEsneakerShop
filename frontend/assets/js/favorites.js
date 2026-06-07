@@ -46,8 +46,8 @@ async function loadFavorites() {
 
         favorites.forEach((product) => {
             const imageSrc = product.image_url
-                ? Constants.PROJECT_BASE_URL + product.image_url
-                : Constants.PROJECT_BASE_URL + "images/no-image.png";
+    ? `http://localhost/SneakerShop/frontend/${product.image_url}`
+    : `http://localhost/SneakerShop/frontend/images/no-image.png`;
 
                 const row = document.createElement("tr");
                 row.innerHTML = `
@@ -159,6 +159,4 @@ async function removeFromFavorites(favouriteId) {
     }
 }
 
-$(document).on("click", "a[href='#favorites']", function () {
-    setTimeout(loadFavorites, 300);
-});
+
