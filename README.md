@@ -1,7 +1,7 @@
 
 # 👟 SneakerShop
 
-https://sneakers-shop-yp4z4.ondigitalocean.app/#home
+https://sneakershop.yzz.me/frontend/index.html#home
 
 SneakerShop is a **full-stack e-commerce application** built with **PHP (FlightPHP micro-framework)** and a responsive **frontend** that allows users to browse, filter, and purchase sneakers.  
 It features **JWT-based authentication**, role-based access for **Admins** and **Clients**, product filtering by **brand** and **price**, and a secure **payment flow**.
@@ -25,12 +25,10 @@ It features **JWT-based authentication**, role-based access for **Admins** and *
 Development Milestones
 This project was completed in five major milestones:
 Milestone 1 – Core Setup
-FlightPHP routing, database schema, initial REST endpoints.
-Milestone 2 – Authentication & Authorization
+FlightPHP routing, database schema, initial REST endpoints, Authentication & Authorization
 JWT integration, middleware, role-based access control.
-Milestone 3 – Product & Filtering
-CRUD for products, price & brand filtering, featured products.
-Milestone 4 – Frontend Integration
+Milestone 2 – Product & Filtering
+CRUD for products, price & brand filtering, featured products,Frontend Integration
 Responsive UI with SPApp, favorites, cart functionality.
-Milestone 5 – Payments & Admin Dashboard
+Milestone 3 – Payments & Admin Dashboard
 Payment gateway integration, admin stats and management tools.
